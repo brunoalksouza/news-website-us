@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>US News Today - Men's Health</title>
+
+    <!-- Favicon (exemplo) -->
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/communication-media-vol-1/512/internet_web_network_global-512.png"
+      type="image/png"
+    />
+
     <style>
       * {
         box-sizing: border-box;
@@ -80,6 +88,34 @@
         font-weight: bold;
         color: #c00;
       }
+      /* Estilo para a imagem principal da notícia */
+      .featured-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+
+      /* Botão "Watch The video" */
+      .watch-video-btn {
+        display: block;
+        background: #c00;
+        margin: 20px auto;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s ease;
+        font-size: x-large;
+      }
+
+      .watch-video-btn:hover {
+        background: #a00;
+      }
 
       footer {
         background-color: #0a1f44;
@@ -111,8 +147,12 @@
 
     <main>
       <article>
-        <h2>Estudo Revela Novas Diretrizes para a Saúde Masculina</h2>
+        <h2>Novas Diretrizes Importantes para a Saúde Masculina</h2>
         <p><strong>Data da publicação:</strong> 02 de Abril de 2025</p>
+
+        <!-- Imagem entre o headline e o texto da notícia -->
+        <img src="./img.jpg" alt="Homem sorrindo" class="featured-image" />
+
         <p>
           Um novo relatório divulgado nesta quarta-feira pelo
           <span class="highlight"
@@ -140,9 +180,10 @@
           saúde, que devem atualizar suas recomendações ao público nos próximos
           meses.
         </p>
-      </article>
 
-      <!-- Adicione mais artigos ou seções conforme necessário -->
+        <!-- Botão "Watch The video" no final da notícia -->
+        <a href="#" class="watch-video-btn">WATCH THE VIDEO</a>
+      </article>
     </main>
 
     <footer>
