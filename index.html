@@ -19,11 +19,20 @@
         padding: 0;
       }
 
+      /* Tamanho de fonte base maior para facilitar a leitura em mobile */
       body {
         font-family: Arial, sans-serif;
+        font-size: 18px; /* Aumente conforme desejado */
         line-height: 1.6;
         background-color: #f4f4f4;
         color: #333;
+      }
+
+      /* Responsividade adicional: aumenta ainda mais o font-size em telas muito pequenas */
+      @media (max-width: 480px) {
+        body {
+          font-size: 20px;
+        }
       }
 
       header {
@@ -33,13 +42,14 @@
         text-align: center;
       }
 
+      /* Ajuste de tamanho dos textos no header */
       header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Título menor que o padrão anterior, mas ainda grande */
         margin-bottom: 5px;
       }
 
       header p {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Subtítulo mais legível */
         font-style: italic;
       }
 
@@ -74,20 +84,24 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
+      /* Ajuste no título do artigo */
       article h2 {
         color: #0a1f44;
         margin-bottom: 15px;
+        font-size: 1.2rem; /* Mantém destaque, mas ajustado para boa legibilidade */
+        text-align: center; /* Centraliza o título */
       }
 
       article p {
-        margin-bottom: 10px;
-        line-height: 1.5;
+        margin-bottom: 15px;
+        line-height: 1.6;
       }
 
       .highlight {
         font-weight: bold;
         color: #c00;
       }
+
       /* Estilo para a imagem principal da notícia */
       .featured-image {
         display: flex;
@@ -104,13 +118,13 @@
         background: #c00;
         margin: 20px auto;
         color: #fff;
-        padding: 10px 20px;
+        padding: 15px 20px; /* Maior espaçamento para ficar mais “clicável” em mobile */
         text-decoration: none;
         border-radius: 4px;
         font-weight: bold;
         text-align: center;
         transition: background 0.3s ease;
-        font-size: x-large;
+        font-size: 1.25rem; /* Aumenta o tamanho da fonte do botão */
       }
 
       .watch-video-btn:hover {
@@ -142,18 +156,21 @@
           OWNER OF ONLY FANS WAS DENOUNCED BY PASSENGERS ON A TRIP BACK FROM
           INDIA!
         </h2>
-        <p><strong>Publication Date:</strong> April 2, 2025</p>
+        <p style="font-size: 0.7rem">
+          <strong>Publication Date:</strong> April 2, 2025
+        </p>
 
         <!-- Imagem entre o headline e o texto da notícia -->
         <img src="./img.jpg" alt="Homem sorrindo" class="featured-image" />
 
         <p>
-          THE COMPLAINT CAME AFTER PASSENGERS SUSPECTED HE WAS ARMED DURING THE
-          FLIGHT... BUT IN FACT HE HAD AN ERECTION! <br />In the interview with
-          our report, the owner of onlyfans revealed that on his trip to india,
-          he did a <span class="highlight">“bull trick”</span>, a 15-second
-          trick to recover his erections that he had lost due to his addiction
-          to pornography...
+          The complaint came after passengers suspected he was armed during the
+          flight... but in fact he had an erection! In the interview with our
+          report, the owner of onlyfans revealed that on his trip to India, he
+          did a
+          <span class="highlight">“bull trick”</span>, a 15-second trick to
+          <span class="highlight">recover his erections that he had lost </span>
+          due to his addiction to pornography...
         </p>
         <p>
           He said that he got so excited that he overdid it and ended up having
@@ -166,7 +183,7 @@
             >said he would release the short 5-minute video teaching how this
             trick</strong
           >
-          works, for the men who want to watch it
+          works, for the men who want to watch it.
         </p>
         <p>
           OUR NEWSPAPER WAS
